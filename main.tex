@@ -1,8 +1,21 @@
-\documentclass{article}
+%% Use \parencite{key} for citations
 
-\title{Reflective Writing}
+\documentclass{article}
+\setlength{\parindent}{0pt}
+
+\usepackage[
+    style=authoryear-ibid,
+    sorting=anyt
+]{biblatex}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{csquotes}
+
+\title{Title}
 \author{Isaac truss}
-\date{November - Jan 2024}
+\date{Date}
+\addbibresource{bibliography.bib}
 
 \begin{document}
 
@@ -13,5 +26,12 @@
 \newpage
 
 \section{Introduction}
+
+\newpage
+
+\printbibliography[
+    heading=bibintoc,
+    title={Bibliograpgy}
+]
 
 \end{document}
